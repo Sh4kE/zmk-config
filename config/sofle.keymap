@@ -14,17 +14,17 @@
 
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  `    |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
+// |       |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
 // |       |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |       |
 // |  ESC  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |       |
 // |  TAB  |  Z  |  X  |  C   |  V   |  B   |        |  |       |  N   |  M    |  ,    |  .   |   /   |       |
 //               | GUI | ALT  | CTRL | LOWER|  SPACE |  | BACKS | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
-&kp GRAVE &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                      &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &none
-&none     &kp Q  &kp W    &kp F    &kp P     &kp B                       &kp J  &kp L     &kp U     &kp Z    &kp SEMI &none
-&kp ESC   &kp A  &kp R    &kp S    &kp T     &kp G                       &kp M  &kp N     &kp E     &kp I    &kp O    &none
-&kp TAB   &kp Y  &kp X    &kp C    &kp D     &kp V    &none       &none  &kp K  &kp H     &kp COMMA &kp DOT  &kp FSLH &none
-                 &kp LGUI &kp LALT &kp LCTRL &kp TAB &kp SPACE    &kp BSPC &kp RET &kp LCTRL &kp RALT &kp RGUI
+&none     &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                         &kp N6    &kp N7    &kp N8    &kp N9   &kp N0   &none
+&none     &kp Q  &kp W    &kp F    &kp P     &kp B                          &kp J     &kp L     &kp U     &kp Z    &kp SEMI &none
+&kp ESC   &kp A  &kp R    &kp S    &kp T     &kp G                          &kp M     &kp N     &kp E     &kp I    &kp O    &none
+&kp TAB   &kp Y  &kp X    &kp C    &kp D     &kp V     &none       &none    &kp K     &kp H     &kp COMMA &kp DOT  &kp FSLH &none
+                 &kp LGUI &kp LALT &kp LCTRL &lt 2 TAB &kp SPACE   &kp BSPC &lt 1 RET &kp LCTRL &kp RALT  &kp RGUI
             >;
 
 //                      LGUI, LALT, LCTRL, TAB/RAISE, SPACE     BSPC, RET/LOW, LCTRL, RALT, RGUI
@@ -41,10 +41,10 @@
 // |       | TAB |  °  |  {   |  }   |  ~   |        |  |       |  &   |  !    |  *    |  %   |   ^   |       |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
-&trans  &trans    &trans           &trans    &trans    &trans                     &trans    &trans    &trans    &trans    &trans    &trans
-&trans  &kp GRAVE &kp HASH         &kp LBKT  &kp RBKT  &kp DLLR                   &kp 6     &kp QUOTE &kp DQT   &kp BSLH  &kp RA(5) &trans
-&trans  &kp ESC   &kp PLUS         &kp LPAR  &kp RPAR  &kp AT                     &kp PIPE  &kp MINUS &kp EQUAL &kp UNDER &trans    &trans
-&trans  &kp TAB   &kp LS(RA(SEMI)) &kp LBRC  &kp RBRC  &kp TILDE2 &trans   &trans &kp AMPS  &kp EXCL  &kp STAR  &kp PRCT  &kp CARET &trans
+&trans  &trans    &trans           &trans    &trans    &trans                     &trans    &trans    &trans    &trans    &trans     &trans
+&trans  &kp GRAVE &kp HASH         &kp LBKT  &kp RBKT  &kp DLLR                   &kp N6    &kp QUOTE &kp DQT   &kp BSLH  &kp RA(N5) &trans
+&trans  &kp ESC   &kp PLUS         &kp LPAR  &kp RPAR  &kp AT                     &kp PIPE  &kp MINUS &kp EQUAL &kp UNDER &trans     &trans
+&trans  &kp TAB   &kp LS(RA(SEMI)) &kp LBRC  &kp RBRC  &kp TILDE2 &trans   &trans &kp AMPS  &kp EXCL  &kp STAR  &kp PRCT  &kp CARET  &trans
                   &trans           &trans    &trans    &trans     &trans   &trans &trans    &trans    &trans    &trans
             >;
 
