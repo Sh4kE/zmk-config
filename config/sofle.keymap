@@ -42,7 +42,7 @@
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
 &trans  &trans    &trans           &trans    &trans    &trans                     &trans    &trans    &trans    &trans    &trans     &trans
-&trans  &kp GRAVE &kp HASH         &kp LBKT  &kp RBKT  &kp DLLR                   &kp N6    &kp QUOTE &kp DQT   &kp BSLH  &kp RA(N5) &trans
+&trans  &kp GRAVE &kp HASH         &kp LBKT  &kp RBKT  &kp DLLR                   &kp N6    &kp SQT   &kp DQT   &kp BSLH  &kp RA(N5) &trans
 &trans  &kp ESC   &kp PLUS         &kp LPAR  &kp RPAR  &kp AT                     &kp PIPE  &kp MINUS &kp EQUAL &kp UNDER &trans     &trans
 &trans  &kp TAB   &kp LS(RA(SEMI)) &kp LBRC  &kp RBRC  &kp TILDE2 &trans   &trans &kp AMPS  &kp EXCL  &kp STAR  &kp PRCT  &kp CARET  &trans
                   &trans           &trans    &trans    &trans     &trans   &trans &trans    &trans    &trans    &trans
