@@ -21,11 +21,13 @@
 //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
 &kp GRAVE &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                      &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &none
-&none     &kp Q  &kp W    &kp F    &kp P     &kp B                       &kp J  &kp L     &kp U     &kp Z    &kp SEM  &none
+&none     &kp Q  &kp W    &kp F    &kp P     &kp B                       &kp J  &kp L     &kp U     &kp Z    &kp SEMI &none
 &kp ESC   &kp A  &kp R    &kp S    &kp T     &kp G                       &kp M  &kp N     &kp E     &kp I    &kp O    &none
-&kp TAB   &kp Y  &kp X    &kp C    &kp D     &kp V  &none      &none     &kp K  &kp H     &kp COMMA &kp DOT  &kp FSLH &none
-                 &kp LGUI &kp LALT &kp LCTRL &mo 1  &kp RET    &kp SPACE &mo 2  &kp RCTRL &kp RALT  &kp RGUI
+&kp TAB   &kp Y  &kp X    &kp C    &kp D     &kp V    &none       &none  &kp K  &kp H     &kp COMMA &kp DOT  &kp FSLH &none
+                 &kp LGUI &kp LALT &kp TAB &kp SPACE  &kp SHIFT   &kp BSPC &kp BSPC  &kp RET &kp RALT  &kp RGUI
             >;
+
+//               KC_LGUI, KC_LALT, ST_CTAB,   RAISE, ST_SSPC     ST_SBSP,   LOWER, ST_CENT, KC_RALT, KC_RGUI
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
