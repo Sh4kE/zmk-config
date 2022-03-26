@@ -20,11 +20,11 @@
 // |  TAB  |  Z  |  X  |  C   |  V   |  B   |        |  |       |  N   |  M    |  ,    |  .   |   /   |       |
 //               | GUI | ALT  | CTRL | LOWER|  SPACE |  | BACKS | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
-&none     &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                         &kp N6    &kp N7    &kp N8    &kp N9   &kp N0   &none
-&none     &kp Q  &kp W    &kp F    &kp P     &kp B                          &kp J     &kp L     &kp U     &kp Z    &kp SEMI &none
-&kp ESC   &mt LSHFT A &mt LALT R &mt LCTRL S &mt LSHFT T &kp G              &kp M     &mt LSHFT N &mt LCTRL &mt RALT I &mt LWIN O    &none
-&kp TAB   &kp Y  &kp X    &kp C    &kp D     &kp V     &none       &none    &kp K     &kp H     &kp COMMA &kp DOT  &kp FSLH &none
-                 &kp LGUI &kp LALT &kp LSHFT &lt 2 TAB &kp SPACE   &kp BSPC &lt 1 RET &kp LCTRL &kp RALT  &kp RGUI
+&none     &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                       &kp N6    &kp N7      &kp N8    &kp N9     &kp N0     &none
+&none     &kp Q      &kp W      &kp F       &kp P       &kp B                        &kp J     &kp L       &kp U     &kp Z      &kp SEMI   &none
+&kp ESC   &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHFT T &kp G                        &kp M     &mt LSHFT N &mt LCTRL &mt RALT I &mt LGUI O &none
+&kp TAB   &kp Y      &kp X      &kp C       &kp D       &kp V     &none     &none    &kp K     &kp H       &kp COMMA &kp DOT    &kp FSLH   &none
+                     &kp LGUI   &kp LALT    &kp LSHFT   &lt 2 TAB &kp SPACE &kp BSPC &lt 1 RET &kp LCTRL   &kp RALT  &kp RGUI
             >;
 
 //                      LGUI, LALT, LCTRL, TAB/RAISE, SPACE     BSPC, RET/LOW, LCTRL, RALT, RGUI
