@@ -9,6 +9,13 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -87,6 +94,24 @@
 /* &trans     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC */
 /* &trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans */
 /*                         &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans */
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+
+        adjust_layer {
+// ------------------------------------------------------------------------------------------------------------
+// |     |     |     |     |     |     |                |     |     |     |     |     |     |
+// |     | F1  | F2  | F3  | F4  | F5  |                | F6  | F7  | F8  | F9  | F10 |     |
+// |     | F11 |     |     |     |     |                |     |     |     |     | F12 |     |
+// |     |     |     |     |     |     |      |  |      |     |     |     |     |     |     |
+//             |     |     |     |     |      |  |      |     |     |     |     |
+            bindings = <
+&trans  &trans   &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1   &kp F2  &kp F3  &kp F4  &kp F5                  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10 &trans
+&trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
