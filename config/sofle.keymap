@@ -21,18 +21,18 @@
             then-layer = <3>;
         };
     };
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
-    keymap {
+    /* behaviors { */
+    /*     hm: homerow_mods { */
+    /*         compatible = "zmk,behavior-hold-tap"; */
+    /*         label = "HOMEROW_MODS"; */
+    /*         #binding-cells = <2>; */
+    /*         tapping-term-ms = <150>; */
+    /*         quick-tap-ms = <0>; */
+    /*         flavor = "tap-preferred"; */
+    /*         bindings = <&kp>, <&kp>; */
+    /*     }; */
+    /* }; */
+    /* keymap { */
         compatible = "zmk,keymap";
 
         default_layer {
@@ -45,10 +45,10 @@
             bindings = <
 &none  &kp N1     &kp N2     &kp N3      &kp N4      &kp N5                               &kp N6         &kp N7      &kp N8      &kp N9     &kp N0     &none
 &none  &kp Q      &kp W      &kp F       &kp P       &kp B                                &kp J          &kp L       &kp U       &kp Z      &kp SEMI   &none
-&none  &hm LGUI A &hm LALT R &hm LCTRL S &hm LSHFT T &kp G                                &kp M          &hm LSHFT N &hm LCTRL E &hm RALT I &hm LGUI O &none
-&none  &kp Y      &kp X      &kp C       &kp D       &kp V           &kp C_MUTE &kp N1    &kp K          &kp H       &kp COMMA   &kp DOT    &kp FSLH   &none
-                  &kp N1     &kp LCTRL   &kp TAB     &lt RAISE SPACE &kp LSHFT  &kp LCTRL &lt LOWER BSPC &kp RET     &kp RALT    &kp RGUI
-                  /* &kp LALT   &kp LCTRL   &kp TAB     &lt RAISE SPACE &kp LSHFT  &kp LCTRL &lt LOWER BSPC &kp RET     &kp RALT    &kp RGUI */
+/* &none  &hm LGUI A &hm LALT R &hm LCTRL S &hm LSHFT T &kp G                                &kp M          &hm LSHFT N &hm LCTRL E &hm RALT I &hm LGUI O &none */
+&none  &kp A &kp R &kp  &kp  T &kp G                                &kp M          &kp  N &kp  E &kp  I &kp  O &none
+&none  &kp Y      &kp X      &kp C       &kp D       &kp V           &kp C_MUTE &none     &kp K          &kp H       &kp COMMA   &kp DOT    &kp FSLH   &none
+                  &kp LALT   &kp LCTRL   &kp TAB     &lt RAISE SPACE &kp LSHFT  &kp LCTRL &lt LOWER BSPC &kp RET     &kp RALT    &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
