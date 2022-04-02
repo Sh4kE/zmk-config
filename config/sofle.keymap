@@ -32,7 +32,7 @@
     /*         bindings = <&kp>, <&kp>; */
     /*     }; */
     /* }; */
-    /* keymap { */
+    keymap {
         compatible = "zmk,keymap";
 
         default_layer {
