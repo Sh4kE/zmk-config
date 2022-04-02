@@ -47,7 +47,7 @@
 &none  &kp Q      &kp W      &kp F       &kp P       &kp B                                &kp J          &kp L       &kp U       &kp Z      &kp SEMI   &none
 /* &none  &hm LGUI A &hm LALT R &hm LCTRL S &hm LSHFT T &kp G                                &kp M          &hm LSHFT N &hm LCTRL E &hm RALT I &hm LGUI O &none */
 &none  &kp A &kp R &kp S &kp  T &kp G                                &kp M          &kp  N &kp  E &kp  I &kp  O &none
-&none  &kp Y      &kp X      &kp C       &kp D       &kp V           &kp C_MUTE &none     &kp K          &kp H       &kp COMMA   &kp DOT    &kp FSLH   &none
+&none  &kp Y      &kp X      &kp C       &kp D       &kp V           &kp C_MUTE &kp C_PLAY      &kp K          &kp H       &kp COMMA   &kp DOT    &kp FSLH   &none
                   &kp LALT   &kp LCTRL   &kp TAB     &lt RAISE SPACE &kp LSHFT  &kp LCTRL &lt LOWER BSPC &kp RET     &kp RALT    &kp RGUI
             >;
 
