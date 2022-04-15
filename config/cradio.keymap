@@ -48,7 +48,6 @@
             bindings = <
 &kp Q   &kp W   &kp F   &kp P   &kp B                   &kp J   &kp L       &kp U       &kp Z      &kp SEMI
 &hm LGUI A &hm LALT R &hm LCTRL S &hm LSHFT T &kp G     &kp M   &hm LSHFT N &hm LCTRL E &hm RALT I &hm LGUI O
-/* &kp A   &kp R   &kp S   &kp T   &kp G                   &kp M   &kp N       &kp E       &kp I      &kp O */
 &kp Y   &kp X   &kp C   &kp D   &kp V                   &kp K   &kp H       &kp COMMA   &kp DOT    &kp FSLH
               &kp TAB &lt RAISE SPACE                   &lt LOWER BSPC &kp RET
             >;
@@ -56,12 +55,13 @@
 
         lower_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  `  |  #  |  [  |  ]  |  $  |                 |  6  |  '   |  "  |  \  |  €  |
-// | ESC |  +  |  (  |  )  |  @  |                 |  |  |  -   |  =  |  _  |     |
-// | TAB |  °  |  {  |  }  |  ~  |                 |  &  |  !   |  *  |  %  |  ^  |
-//                   |     |     |                 |     |      |
+// |  1  |  2  |  3  |  4  |  5  |                 |  6  |  7  |  8  |  9  |  10 |
+// | ESC |  +  |  (  |  )  |  @  |                 |  |  |  -  |  =  |  _  |     |
+// | TAB |  °  |  {  |  }  |  ~  |                 |  &  |  !  |  *  |  %  |  ^  |
+//                   |     |     |                 |     |     |
             bindings = <
-&kp GRAVE &kp HASH         &kp LBKT  &kp RBKT  &kp DLLR       &kp N6    &kp SQT   &kp DQT   &kp BSLH  &kp RA(N5)
+/* &kp GRAVE &kp HASH         &kp LBKT  &kp RBKT  &kp DLLR       &kp N6    &kp SQT   &kp DQT   &kp BSLH  &kp RA(N5) */
+&kp N1    &kp N2           &kp N3    &kp N4    &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
 &kp ESC   &kp PLUS         &kp LPAR  &kp RPAR  &kp AT         &kp PIPE  &kp MINUS &kp EQUAL &kp UNDER &trans
 &kp TAB   &kp LS(RA(SEMI)) &kp LBRC  &kp RBRC  &kp TILDE      &kp AMPS  &kp EXCL  &kp STAR  &kp PRCT  &kp CARET
                                      &trans    &trans         &trans    &trans
@@ -70,28 +70,28 @@
 
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |     | WOR |     |     | WOB |                |  v  |  <  |  1  |  2  |  3  |
-// | ESC |     | PGU | BSW | DEW |                |     |  0  |  4  |  5  |  6  |
-// | TAB | HOM | PGD | END | DEL |                |  ^  |  >  |  7  |  8  |  9  |
+// |     | WOR |     |     | WOB |                |  v  |  <  |  `  |  #  |  $  |
+// | ESC |     | PGU | BSW | DEW |                |     |     |  [  |  ]  |  '  |
+// | TAB | HOM | PGD | END | DEL |                |  ^  |  >  |  "  |  \  |  €  |
 //                   |     |     |                |     |     |
             bindings = <
-&trans   &kp LC(LEFT) &trans     &trans    &kp LC(RIGHT)             &kp DOWN  &kp RIGHT &kp N1  &kp N2 &kp N3
-&kp ESC  &trans       &kp PG_UP  &kp LC(W) &kp LC(DEL)               &trans    &kp N0    &kp N4  &kp N5 &kp N6
-&kp TAB  &kp HOME     &kp PG_DN  &kp END   &kp DEL                   &kp UP    &kp LEFT  &kp N7  &kp N8 &kp N9
+&trans   &kp LC(LEFT) &trans     &trans    &kp LC(RIGHT)             &kp DOWN  &kp RIGHT &kp GRAVE &kp HASH &kp DLLR
+&kp ESC  &trans       &kp PG_UP  &kp LC(W) &kp LC(DEL)               &trans    &trans    &kp LBKT  &kp RBKT &kp SQT
+&kp TAB  &kp HOME     &kp PG_DN  &kp END   &kp DEL                   &kp UP    &kp LEFT  &kp DQT   &kp BSLH &kp RA(N5)
                                  &trans    &trans                    &trans    &trans
             >;
 		};
 
         adjust_layer {
 // ------------------------------------------------------------------------------------------------------------
-// | 1   | 2   | 3   | 4   | 5   |                | 6   | 7   | 8   | 9   | 0   |
 // | F1  | F2  | F3  | F4  | F5  |                | F6  | F7  | F8  | F9  | F10 |
 // | F11 |     |     |     |     |                |     |     |     |     | F12 |
+// |     |     |     |     |     |                |     |     |     |     |     |
 //       |     |     |     |     |                |     |     |     |     |
             bindings = <
-&kp N1   &kp N2  &kp N3  &kp N4  &kp N5                  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
 &kp F1   &kp F2  &kp F3  &kp F4  &kp F5                  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
 &kp F11  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &kp F12
+&trans   &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
                          &trans  &trans                  &trans  &trans
             >;
         };
