@@ -55,30 +55,30 @@
 
         lower_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  1  |  2  |  3  |  4  |  5  |                 |  6  |  7  |  8  |  9  |  10 |
-// | ESC |  +  |  (  |  )  |  @  |                 |  |  |  -  |  =  |  _  |     |
-// | TAB |  °  |  {  |  }  |  ~  |                 |  &  |  !  |  *  |  %  |  ^  |
+// |  1! |  2@ |  3# |  4$ |  5% |                 |  6^ |  7& |  8* |  9( |  10)|
+// | ESC |  `  |  [  |  ]  |  +  |                 |  |  |  -  |  =  |  _  |  €  |
+// | TAB |  °  |  {  |  }  |  ~  |                 |  '  |  "  |     |     |  \  |
 //                   |     |     |                 |     |     |
             bindings = <
-/* &kp GRAVE &kp HASH         &kp LBKT  &kp RBKT  &kp DLLR       &kp N6    &kp SQT   &kp DQT   &kp BSLH  &kp RA(N5) */
+/* &kp GRAVE &kp HASH      &kp LBKT  &kp RBKT  &kp DLLR       &kp N6    &kp SQT   &kp DQT   &kp BSLH  &kp RA(N5) */
 &kp N1    &kp N2           &kp N3    &kp N4    &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
-&kp ESC   &kp PLUS         &kp LPAR  &kp RPAR  &kp AT         &kp PIPE  &kp MINUS &kp EQUAL &kp UNDER &trans
-&kp TAB   &kp LS(RA(SEMI)) &kp LBRC  &kp RBRC  &kp TILDE      &kp AMPS  &kp EXCL  &kp STAR  &kp PRCT  &kp CARET
+&kp ESC   &kp GRAVE        &kp LBKT  &kp RBKT  &kp AT         &kp PIPE  &kp MINUS &kp EQUAL &kp UNDER &kp RA(N5)
+&kp TAB   &kp LS(RA(SEMI)) &kp LBRC  &kp RBRC  &kp TILDE      &kp SQT   &kp DQT   &kp STAR  &kp PRCT  &kp BSLH
                                      &trans    &trans         &trans    &trans
             >;
 		};
 
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |     | WOR |     |     | WOB |                |  v  |  <  |  `  |  #  |  $  |
-// | ESC |     | PGU | BSW | DEW |                |     |     |  [  |  ]  |  '  |
-// | TAB | HOM | PGD | END | DEL |                |  ^  |  >  |  "  |  \  |  €  |
+// |     | WOR |     |     | WOB |                |  v  |  <  |  7  |  8  |  9  |
+// | ESC |     | PGU | BSW | DEW |                |     |  0  |  4  |  5  |  6  |
+// | TAB | HOM | PGD | END | DEL |                |  ^  |  >  |  1  |  2  |  4  |
 //                   |     |     |                |     |     |
             bindings = <
-&trans   &kp LC(LEFT) &trans     &trans    &kp LC(RIGHT)             &kp DOWN  &kp RIGHT &kp GRAVE &kp HASH &kp DLLR
-&kp ESC  &trans       &kp PG_UP  &kp LC(W) &kp LC(DEL)               &trans    &trans    &kp LBKT  &kp RBKT &kp SQT
-&kp TAB  &kp HOME     &kp PG_DN  &kp END   &kp DEL                   &kp UP    &kp LEFT  &kp DQT   &kp BSLH &kp RA(N5)
-                                 &trans    &trans                    &trans    &trans
+&trans   &kp LC(LEFT) &trans     &trans    &kp LC(RIGHT)             &kp DOWN &kp RIGHT &kp N7 &kp N8 &kp N9
+&kp ESC  &trans       &kp PG_UP  &kp LC(W) &kp LC(DEL)               &trans   &kp N0    &kp N4 &kp N5 &kp N6
+&kp TAB  &kp HOME     &kp PG_DN  &kp END   &kp DEL                   &kp UP   &kp LEFT  &kp N1 &kp N2 &kp N3
+                                 &trans    &trans                    &trans   &trans
             >;
 		};
 
