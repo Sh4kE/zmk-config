@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-set -xeuo pipefail
+set -euo pipefail
 sudo_home=$(getent passwd "$SUDO_USER" | awk -F":" '{print $6}')
 
 echo "to download the latest build: gh run download -n firmware -D ${sudo_home}/Nextcloud/zmk"
@@ -18,7 +18,8 @@ else
     exit 1
 fi
 
-files=$(ls "${sudo_home}/Nextcloud/zmk/")
+dir="${sudo_home}/Nextcloud/zmk/"
+files=$(ls "${dir}")
 for f in ${files}
 do
     if [[ $f =~ ^${keyboard} ]]; then
@@ -27,7 +28,7 @@ do
         if [[ $REPLY =~ ^[Yy]$ ]]; then
             dev=$(lsblk |grep 32,1M |awk '{print $1}')
             mount "/dev/${dev}" /mnt
-            cp "$f" /mnt/
+            cp "${dir}$f" /mnt/
             sleep 1
             umount "/dev/${dev}"
         fi
