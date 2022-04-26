@@ -26,7 +26,7 @@ do
         echo ""
         read -p "is the Keyboard >> $f << ready for flashing?" -n 1 -r
         if [[ $REPLY =~ ^[Yy]$ ]]; then
-            dev=$(lsblk |grep 32,1M |awk '{print $1}')
+            dev=$(lsblk |grep -E "32[,.]1M" |awk '{print $1}')
             mount "/dev/${dev}" /mnt
             cp "${dir}$f" /mnt/
             sleep 1
