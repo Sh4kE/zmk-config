@@ -58,13 +58,13 @@
 // ------------------------------------------------------------------------------------------------------------
 // |  1! |  2@ |  3# |  4$ |  5% |                 |  6^ |  7& |  8* |  9( |  10)|
 // | ESC |  `  |  [  |  ]  |  +  |                 |  |  |  -  |  =  |  _  |  €  |
-// | TAB |  °  |  {  |  }  |  ~  |                 |  '  |  "  |  *  |  %  |  \  |
+// | TAB |  °  |  {  |  }  |  ~  |                 |     |  '  |  "  |     |  \  |
 //                   |     |     |                 |     |     |
             bindings = <
 /* &kp GRAVE &kp HASH      &kp LBKT  &kp RBKT  &kp DLLR       &kp N6    &kp SQT   &kp DQT   &kp BSLH  &kp RA(N5) */
 &kp N1    &kp N2           &kp N3    &kp N4    &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
 &kp ESC   &kp GRAVE        &kp LBKT  &kp RBKT  &kp PLUS       &kp PIPE  &kp MINUS &kp EQUAL &kp UNDER &kp RA(N5)
-&kp TAB   &kp LS(RA(SEMI)) &kp LBRC  &kp RBRC  &kp TILDE      &kp SQT   &kp DQT   &kp STAR  &kp PRCT  &kp BSLH
+&kp TAB   &kp LS(RA(SEMI)) &kp LBRC  &kp RBRC  &kp TILDE      &trans    &kp SQT   &kp DQT   &trans    &kp BSLH
                                      &trans    &trans         &trans    &trans
             >;
 		};
