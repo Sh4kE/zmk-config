@@ -42,24 +42,24 @@
 
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  Q  |  W  |  F  |  P  |  B  |                 |  J  |  L  |  U   |  Z  |  ;  |
-// |  A  |  R  |  S  |  T  |  G  |                 |  M  |  N  |  E   |  I  |  O  |
-// |  Y  |  X  |  C  |  D  |  V  |                 |  K  |  H  |  ,   |  .  |  /  |
-//                   | TAB | SPC |                 | BSP | ENT |
+//            |  Q  |  W  |  F  |  P  |  B  |                 |  J  |  L  |  U   |  Z  |  ;  |
+//            |  A  |  R  |  S  |  T  |  G  |                 |  M  |  N  |  E   |  I  |  O  |
+//            |  Y  |  X  |  C  |  D  |  V  |                 |  K  |  H  |  ,   |  .  |  /  |
+//                              | TAB | SPC |                 | BSP | ENT |
             bindings = <
-&kp Q   &kp W   &kp F   &kp P   &kp B                   &kp J   &kp L       &kp U       &kp Z      &kp SEMI
+&kp Q      &kp W      &kp F       &kp P       &kp B     &kp J   &kp L       &kp U       &kp Z      &kp SEMI
 &hm LGUI A &hm LALT R &hm LCTRL S &hm LSHFT T &kp G     &kp M   &hm LSHFT N &hm LCTRL E &hm RALT I &hm LGUI O
-&kp Y   &kp X   &kp C   &kp D   &kp V                   &kp K   &kp H       &kp COMMA   &kp DOT    &kp FSLH
-              &kp TAB &lt RAISE SPACE                   &lt LOWER BSPC &kp RET
+&kp Y      &kp X      &kp C       &kp D       &kp V     &kp K   &kp H       &kp COMMA   &kp DOT    &kp FSLH
+                            &kp TAB &lt RAISE SPACE     &lt LOWER BSPC &kp RET
             >;
 		};
 
         lower_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  1! |  2@ |  3# |  4$ |  5% |                 |  6^ |  7& |  8* |  9( |  10)|
-// | ESC |  `  |  [  |  ]  |  +  |                 |  |  |  -  |  =  |  _  |  €  |
-// | TAB |  °  |  {  |  }  |  ~  |                 |     |  '  |  "  |     |  \  |
-//                   |     |     |                 |     |     |
+//            |  1! |  2@ |  3# |  4$ |  5% |                 |  6^ |  7& |  8* |  9( |  10)|
+//            | ESC |  `  |  [  |  ]  |  +  |                 |  |  |  -  |  =  |  _  |  €  |
+//            | TAB |  °  |  {  |  }  |  ~  |                 |     |  '  |  "  |     |  \  |
+//                              |     |     |                 |     |     |
             bindings = <
 /* &kp GRAVE &kp HASH      &kp LBKT  &kp RBKT  &kp DLLR       &kp N6    &kp SQT   &kp DQT   &kp BSLH  &kp RA(N5) */
 &kp N1    &kp N2           &kp N3    &kp N4    &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
@@ -71,10 +71,10 @@
 
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |     | WOR |     |     | WOB |                |  v  |  <  |  7  |  8  |  9  |
-// | ESC |     | PGU | BSW | DEW |                |     |  0  |  4  |  5  |  6  |
-// | TAB | HOM | PGD | END | DEL |                |  ^  |  >  |  1  |  2  |  4  |
-//                   |     |     |                |     |     |
+//            |     | WOR |     |     | WOB |                |  v  |  <  |  7  |  8  |  9  |
+//            | ESC |     | PGU | BSW | DEW |                |     |  0  |  4  |  5  |  6  |
+//            | TAB | HOM | PGD | END | DEL |                |  ^  |  >  |  1  |  2  |  4  |
+//                              |     |     |                |     |     |
             bindings = <
 &trans   &kp LC(RIGHT) &trans     &trans    &kp LC(LEFT)            &kp DOWN &kp RIGHT &kp N7 &kp N8 &kp N9
 &kp ESC  &trans        &kp PG_UP  &kp LC(W) &kp LC(DEL)             &trans   &kp N0    &kp N4 &kp N5 &kp N6
@@ -85,10 +85,10 @@
 
         adjust_layer {
 // ------------------------------------------------------------------------------------------------------------
-// | F1  | F2  | F3  | F4  | F5  |                | F6  | F7  | F8  | F9  | F10 |
-// | F11 |     | bt0 | bt1 | out |                |     | bt2 | bt3 |     | F12 |
-// |     |     |     |     |     |                |     |     |     |     |     |
-//       |     |     |     |     |                |     |     |     |     |
+//            | F1  | F2  | F3  | F4  | F5  |                | F6  | F7  | F8  | F9  | F10 |
+//            | F11 |     | bt0 | bt1 | out |                |     | bt2 | bt3 |     | F12 |
+//            |     |     |     |     |     |                |     |     |     |     |     |
+//                  |     |     |     |     |                |     |     |     |     |
             bindings = <
 &kp F1   &kp F2  &kp F3       &kp F4       &kp F5                  &kp F6        &kp F7       &kp F8       &kp F9  &kp F10
 &kp F11  &trans  &bt BT_SEL 0 &bt BT_SEL 1 &out OUT_TOG            &kp K_VOL_UP  &bt BT_SEL 2 &bt BT_SEL 3 &trans  &kp F12
