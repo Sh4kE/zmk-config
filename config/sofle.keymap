@@ -62,9 +62,9 @@
 // TODO: Some binds are waiting for shifted keycode support.
 // ------------------------------------------------------------------------------------------------------------
 // |     |     |     |     |     |     |                 |     |      |     |     |     |     |
-// |     |  `  |  #  |  [  |  ]  |  $  |                 |  6  |  '   |  "  |  \  |  €  |     |
-// |     | ESC |  +  |  (  |  )  |  @  |                 |  |  |  -   |  =  |  _  |     |     |
-// |     | TAB |  °  |  {  |  }  |  ~  |     |     |     |  &  |  !   |  *  |  %  |  ^  |     |
+// |     |  !  |  @  |  #  |  $  |  %  |                 |  ^  |  &   |  *  |  (  |  )  |     |
+// |     | ESC |  `  |  [  |  ]  |  +  |                 |  |  |  -   |  =  |  _  |     |     |
+// |     | TAB |  °  |  {  |  }  |  ~  |     |     |     |     |  '   |  "  |     |  \  |     |
 //             |     |     |     |     |     |     |     |     |      |     |     |
             bindings = <
 &trans  &trans     &trans           &trans     &trans     &trans                     &trans     &trans     &trans     &trans     &trans     &trans
@@ -80,15 +80,15 @@
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |     |     |     |     |     |     |                |     |     |     |     |     |     |
-// |     |     | WOR |     |     | WOB |                |  v  |  <  |  1  |  2  |  3  |     |
+// |     |     | WOR |     |     | WOB |                |  v  |  <  |  7  |  8  |  9  |     |
 // |     | ESC |     | PGU | BSW | DEW |                |     |  0  |  4  |  5  |  6  |     |
-// |     | TAB | HOM | PGD | END | DEL |      |  |      |  ^  |  >  |  7  |  8  |  9  |     |
+// |     | TAB | HOM | PGD | END | DEL |      |  |      |  ^  |  >  |  1  |  2  |  3  |     |
 //             |     |     |     |     |      |  |      |     |     |     |     |
             bindings = <
 &trans  &trans   &trans       &trans     &trans    &trans                         &trans    &trans    &trans  &trans &trans  &trans
-&trans  &trans   &kp LC(LEFT) &trans     &trans    &kp LC(RIGHT)                  &kp DOWN  &kp LEFT  &kp N1  &kp N2 &kp N0  &trans
+&trans  &trans   &kp LC(LEFT) &trans     &trans    &kp LC(RIGHT)                  &kp DOWN  &kp LEFT  &kp N7  &kp N8 &kp N9  &trans
 &trans  &kp ESC  &trans       &kp PG_UP  &kp LC(W) &kp LC(DEL)                    &trans    &kp N0    &kp N4  &kp N5 &kp N6  &trans
-&trans  &kp TAB  &kp HOME     &kp PG_DN  &kp END   &kp DEL        &trans  &trans  &kp UP    &kp RIGHT &kp N7  &kp N8 &kp N9  &trans
+&trans  &kp TAB  &kp HOME     &kp PG_DN  &kp END   &kp DEL        &trans  &trans  &kp UP    &kp RIGHT &kp N1  &kp N2 &kp N3  &trans
                  &trans       &trans     &trans    &trans         &trans  &trans  &trans    &trans    &trans  &trans
             >;
 
@@ -99,13 +99,14 @@
 // ------------------------------------------------------------------------------------------------------------
 // |     |     |     |     |     |     |                |     |     |     |     |     |     |
 // |     | F1  | F2  | F3  | F4  | F5  |                | F6  | F7  | F8  | F9  | F10 |     |
-// |     | F11 |     |     |     |     |                |     |     |     |     | F12 |     |
-// |     |     |     |     |     |     |      |  |      |     |     |     |     |     |     |
+// |     | F11 |     |manja|noteb|bt/us|                | V+  |ipad |one+ |     | F12 |     |
+// |     |     |     |     |     |     |      |  |      | V-  |     |     |     |     |     |
 //             |     |     |     |     |      |  |      |     |     |     |     |
             bindings = <
 &trans  &trans   &trans  &trans       &trans       &trans                      &trans        &trans       &trans       &trans  &trans  &trans
 &trans  &kp F1   &kp F2  &kp F3       &kp F4       &kp F5                      &kp F6        &kp F7       &kp F8       &kp F9  &kp F10 &trans
-&trans  &kp F11  &trans  &bt BT_SEL 0 &bt BT_SEL 1 &out OUT_TOG &trans &trans  &kp K_VOL_UP  &bt BT_SEL 2 &bt BT_SEL 3 &trans  &kp F12 &trans
+&trans  &trans     &trans           &trans     &trans     &trans                     &trans     &trans     &trans     &trans     &trans     &trans
+/* &trans  &kp F11  &trans  &bt BT_SEL 0 &bt BT_SEL 1 &out OUT_TOG                &kp K_VOL_UP  &bt BT_SEL 2 &bt BT_SEL 3 &trans  &kp F12 &trans */
 &trans  &trans   &trans  &trans       &trans       &trans       &trans &trans  &kp K_VOL_DN  &trans       &trans       &trans  &trans  &trans
                  &trans  &trans       &trans       &trans       &trans &trans  &trans        &trans       &trans       &trans
             >;
