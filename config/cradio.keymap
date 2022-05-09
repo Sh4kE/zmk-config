@@ -37,6 +37,11 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        &lt {
+            flavor = "tap-preferred";
+            tapping_term_ms = <200>;
+            quick-tap-ms = <150>;
+        };
     };
     keymap {
         compatible = "zmk,keymap";
