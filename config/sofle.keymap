@@ -37,7 +37,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        lt: layer_tap {
+       qlt: layer_tap {
             flavor = "tap-preferred";
             tapping_term_ms = <200>;
             quick-tap-ms = <150>;
@@ -59,7 +59,7 @@
 &none  &hm LGUI A &hm LALT R &hm LCTRL S &hm LSHFT T &kp G                     &kp M   &hm LSHFT N &hm LCTRL E &hm RALT I &hm LGUI O &none
 /* &none  &kp A   &kp R   &kp S   &kp T   &kp G                                &kp M   &kp N       &kp E       &kp I      &kp O      &none */
 &none  &kp Y      &kp X      &kp C       &kp D       &kp V   &none   &none     &kp K   &kp H       &kp COMMA   &kp DOT    &kp FSLH   &none
-           &kp LALT &kp LCTRL &kp TAB &lt RAISE SPACE &kp LSHFT      &kp LCTRL &lt LOWER BSPC &kp RET     &kp RALT    &kp RGUI
+           &kp LALT &kp LCTRL &kp TAB &qlt RAISE SPACE &kp LSHFT     &kp LCTRL &qlt LOWER BSPC &kp RET     &kp RALT    &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
