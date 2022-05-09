@@ -19,6 +19,11 @@
     tapping_term_ms = <200>;
     quick-tap-ms = <150>;
 };
+&lt {
+    flavor = "tap-preferred";
+    tapping_term_ms = <200>;
+    quick-tap-ms = <150>;
+};
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -37,11 +42,11 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-       qlt: layer_tap {
-            flavor = "tap-preferred";
-            tapping_term_ms = <200>;
-            quick-tap-ms = <150>;
-        };
+       /* qlt: layer_tap { */
+       /*      flavor = "tap-preferred"; */
+       /*      tapping_term_ms = <200>; */
+       /*      quick-tap-ms = <150>; */
+       /*  }; */
     };
     keymap {
         compatible = "zmk,keymap";
@@ -56,7 +61,7 @@
 &kp Q      &kp W      &kp F       &kp P       &kp B     &kp J   &kp L       &kp U       &kp Z      &kp SEMI
 &hm LGUI A &hm LALT R &hm LCTRL S &hm LSHFT T &kp G     &kp M   &hm LSHFT N &hm LCTRL E &hm RALT I &hm LGUI O
 &kp Y      &kp X      &kp C       &kp D       &kp V     &kp K   &kp H       &kp COMMA   &kp DOT    &kp FSLH
-                           &kp TAB &qlt RAISE SPACE     &qlt LOWER BSPC &kp RET
+                           &kp TAB &lt RAISE SPACE     &lt LOWER BSPC &kp RET
             >;
 		};
 
