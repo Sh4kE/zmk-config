@@ -86,11 +86,11 @@
 //                     |     | TAB | HOM | PGD | END | DEL |      |  |      |  ^  |  >  |  1  |  2  |  3  |     |
 //                                 |     |     |     |     |      |  |      |     |     |     |     |
             bindings = <
-&trans  &trans   &trans       &trans     &trans    &trans                         &trans    &trans    &trans  &trans &trans  &trans
-&trans  &trans   &kp LC(LEFT) &trans     &trans    &kp LC(RIGHT)                  &kp DOWN  &kp RIGHT &kp N7  &kp N8 &kp N9  &trans
-&trans  &kp ESC  &trans       &kp PG_UP  &kp LC(W) &kp LC(DEL)                    &trans    &kp N0    &kp N4  &kp N5 &kp N6  &trans
-&trans  &kp TAB  &kp HOME     &kp PG_DN  &kp END   &kp DEL        &trans  &trans  &kp UP    &kp LEFT  &kp N1  &kp N2 &kp N3  &trans
-                 &trans       &trans     &trans    &trans         &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans   &trans        &trans     &trans    &trans                        &trans    &trans    &trans  &trans &trans  &trans
+&trans  &trans   &kp LC(RIGHT) &wrans     &trans    &kp LC(LEFT)                  &kp DOWN  &kp RIGHT &kp N7  &kp N8 &kp N9  &trans
+&trans  &kp ESC  &trans        &kp PG_UP  &kp LC(W) &kp LC(DEL)                   &trans    &kp N0    &kp N4  &kp N5 &kp N6  &trans
+&trans  &kp TAB  &kp HOME      &kp PG_DN  &kp END   &kp DEL       &trans  &trans  &kp UP    &kp LEFT  &kp N1  &kp N2 &kp N3  &trans
+                 &trans        &trans     &trans    &trans        &trans  &trans  &trans    &trans    &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
