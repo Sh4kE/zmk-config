@@ -1,9 +1,6 @@
 #!/usr/bin/bash
 
 set -euo pipefail
-sudo_home=$(getent passwd "$SUDO_USER" | awk -F":" '{print $6}')
-
-echo "to download the latest build: gh run download -n firmware -D ${sudo_home}/Nextcloud/zmk"
 
 echo 'Please select keyboard to flash'
 read -p "(1) sofle (2) cradio :" -n 1 -r
@@ -18,7 +15,7 @@ else
     exit 1
 fi
 
-dir="${sudo_home}/Nextcloud/zmk/"
+dir="firmware/"
 files=$(ls "${dir}")
 for f in ${files}
 do
