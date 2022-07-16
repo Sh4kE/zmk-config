@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+./setup.sh
 mkdir -p firmware/old/
 mv firmware/*.uf2 firmware/old/
 
