@@ -132,7 +132,7 @@
             bindings = <
 &none  &kp ESC    &kp 1    &kp 2    &kp 3    &kp 4                       &kp 5   &kp 6          &kp 7  &kp 8  &kp 9      &none
 &none  &kp TAB    &kp Q    &kp W    &kp E    &kp R                       &kp P   &kp L          &kp G  &none  &none      &none
-&none  &kp LSFT   &kp A    &kp S    &kp D    &kp F                       &kp I   &kp K_VOL_UP   &none  &none  &none      &none
+&none  &kp LSFT   &kp A    &kp S    &kp D    &kp F                       &kp I   &hm LSHFT K_VOL_UP &hm LCTRL E &hm RALT I &hm LGUI O &none
 &none  &kp LCTRL  &kp Y    &kp X    &kp C    &kp V     &none     &none   &kp M   &kp K_VOL_DN   &none  &none  &tog GAME  &none
                   &none    &none    &kp BSPC &kp SPACE &kp RET   &none   &none   &none          &none  &none
             >;
