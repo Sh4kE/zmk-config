@@ -13,6 +13,7 @@
 #define LOWER 1
 #define RAISE 2
 #define ADJUST 3
+#define GAME 4
 
 &lt {
     flavor = "tap-preferred";
@@ -33,7 +34,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
     };
@@ -55,17 +56,16 @@
 		};
 
         lower_layer {
+// TODO: Some binds are waiting for shifted keycode support.
 // ------------------------------------------------------------------------------------------------------------
-//            |  1! |  2@ |  3# |  4$ |  5% |                 |  6^ |  7& |  8* |  9( |  10)|
-//            | ESC |  `  |  [  |  ]  |  +  |                 |  |  |  -  |  =  |  _  |  €  |
-//            | TAB |  °  |  {  |  }  |  ~  |                 |     |  '  |  "  |     |  \  |
-//                              |     |     |                 |     |     |
+//                           |     |  @  |  #  |  $  |  %  |                 |  ^  |  |  |  &  |  §  |     |
+//                           | ESC |  [  |  (  |  {  |  ~  |                 |  _  |  }  |  )  |  ]  |  *  |
+//                           |  !  |  °  |  "  |  '  |  `  |     |     |     |  -  |  +  |  =  |  €  |  \  |
             bindings = <
-/* &kp GRAVE &kp HASH      &kp LBKT  &kp RBKT  &kp DLLR       &kp N6    &kp SQT   &kp DQT   &kp BSLH  &kp RA(N5) */
-&kp N1    &kp N2           &kp N3    &kp N4    &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
-&kp ESC   &kp GRAVE        &kp LBKT  &kp RBKT  &kp PLUS       &kp PIPE  &kp MINUS &kp EQUAL &kp UNDER &kp RA(N5)
-&kp TAB   &kp LS(RA(SEMI)) &kp LBRC  &kp RBRC  &kp TILDE      &trans    &kp SQT   &kp DQT   &trans    &kp BSLH
-                                     &trans    &trans         &trans    &trans
+&trans     &kp LS(N2)       &kp LS(N3) &kp LS(N4) &kp LS(N5)                  &kp LS(N6) &kp PIPE  &kp LS(N7) &kp LS(RA(S))  &trans
+&kp ESC    &kp LBKT         &kp LS(N9) &kp LBRC   &kp TILDE                   &kp UNDER  &kp RBRC  &kp LS(N0) &kp RBKT       &kp LS(N8)
+&kp LS(N1) &kp LS(RA(SEMI)) &kp DQT    &kp SQT    &kp GRAVE                   &kp MINUS  &kp PLUS  &kp EQUAL  &kp RA(N5)     &kp BSLH
+                                       &trans    &trans                       &trans    &trans
             >;
 		};
 
@@ -73,7 +73,7 @@
 // ------------------------------------------------------------------------------------------------------------
 //            |     | WOR |     |     | WOB |                |  v  |  <  |  7  |  8  |  9  |
 //            | ESC |     | PGU | BSW | DEW |                |     |  0  |  4  |  5  |  6  |
-//            | TAB | HOM | PGD | END | DEL |                |  ^  |  >  |  1  |  2  |  4  |
+//            | TAB | HOM | PGD | END | DEL |                |  ^  |  >  |  1  |  2  |  3  |
 //                              |     |     |                |     |     |
             bindings = <
 &trans   &kp LC(RIGHT) &trans     &trans    &kp LC(LEFT)            &kp DOWN &kp RIGHT &kp N7 &kp N8 &kp N9
@@ -85,15 +85,15 @@
 
         adjust_layer {
 // ------------------------------------------------------------------------------------------------------------
-//            | F1  | F2  | F3  | F4  | F5  |                | F6  | F7  | F8  | F9  | F10 |
-//            | F11 |     | bt0 | bt1 | out |                |     | bt2 | bt3 |     | F12 |
+//            |  1  |  2  |  3  |  4  |  5  |                |  6  |  7  |  8  |  9  |  0  |
+//            |     |     | bt0 | bt1 | out |                |     | bt2 | bt3 |     |     |
 //            |     |     |     |     |     |                |     |     |     |     |     |
 //                  |     |     |     |     |                |     |     |     |     |
             bindings = <
-&kp F1   &kp F2  &kp F3       &kp F4       &kp F5                  &kp F6        &kp F7       &kp F8       &kp F9  &kp F10
-&kp F11  &trans  &bt BT_SEL 0 &bt BT_SEL 1 &out OUT_TOG            &kp K_VOL_UP  &bt BT_SEL 2 &bt BT_SEL 3 &trans  &kp F12
-&trans   &trans  &trans       &trans       &trans                  &kp K_VOL_DN  &trans       &trans       &trans  &trans
-                              &trans       &trans                  &trans        &trans
+&kp N1   &kp N2      &kp N3       &kp N4       &kp N5              &kp N6        &kp N7       &kp N8       &kp N9       &kp N0
+&trans   &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &out OUT_TOG        &kp K_VOL_UP  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans
+&trans   &trans      &trans       &trans       &trans              &kp K_VOL_DN  &trans       &trans       &trans       &trans
+                                  &trans       &trans              &trans        &trans
             >;
         };
     };
