@@ -32,11 +32,20 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            quick-tap-ms = <0>;
+            tapping-term-ms = <170>;
+            quick-tap-ms = <100>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
+        // hm: homerow_mods {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     label = "HOMEROW_MODS";
+        //     #binding-cells = <2>;
+        //     tapping-term-ms = <350>;
+        //     quick-tap-ms = <0>;
+        //     flavor = "balanced";
+        //     bindings = <&kp>, <&kp>;
+        // };
     };
     keymap {
         compatible = "zmk,keymap";
