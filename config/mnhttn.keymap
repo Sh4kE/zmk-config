@@ -72,7 +72,7 @@
                 &ht ESC Q    &kp D        &kp R        &kp W        &kp B                              &kp J        &kp F        &kp U        &kp P        &kp COLON
                 &mt LALT A   &mt LCTRL S  &mt LGUI H   &mt LSHFT T  &kp G                              &kp Y        &mt RSHFT N  &mt RGUI E   &mt RCTRL O  &mt RALT I
                 &kp Z        &kp X        &kp M        &kp C        &kp V                              &kp K        &kp L        &kp COMMA    &kp DOT      &kp MINUS
-                                          &trans       &lt SYM SPACE  &lt NUM BSPC  &trans     &trans  &lt NAV TAB     &mt LSHFT RET   &trans
+                                          &trans       &kp SPACE    &kp BSPC  &trans           &trans  &kp TAB      &mt LSHFT RET &trans
             >;
         };
 
@@ -83,7 +83,7 @@
                 &kp EXCL     &kp AT       &kp LBRC     &kp RBRC     &kp GRAVE                          &kp SQT      &kp U_UMLAUT &kp CARET    &kp O_UMLAUT &kp STARi
                 &kp A_UMLAUT &kp SZ       &kp LPAR     &kp RPAR     &kp PLUS                           &kp DQT      &kp EQUAL    &kp DLLR     &kp POUND    &kp SEMI
                 &kp PIPE     &kp PRCNT    &kp LBKT     &kp RBKT     &kp TILDE                          &kp AMPS     &kp LT       &kp GT       &kp QMARK    &kp UNDER
-                                                &trans          &trans          &trans        &trans          &trans  &kp SLASH    &kp RSHFT       &trans
+                                          &trans       &trans       &trans    &trans           &trans  &kp SLASH    &kp RSHFT    &trans
             >;
         };
 
@@ -94,7 +94,7 @@
                 &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                           &kp F6        &kp F7     &kp F8     &kp F9     &kp F10
                 &trans        &trans        &trans        &trans        &trans                           &kp K_VOL_UP  &trans     &trans     &trans     &trans
                 &trans        &trans        &trans        &trans        &trans                           &kp K_VOL_DN  &trans     &trans     &trans     &trans
-                                            &trans        &trans        &trans        &kp F11   &kp F12  &trans        &trans     &trans
+                                            &trans        &trans        &trans  &kp F11         &kp F12  &trans        &trans     &trans
             >;
         };
     };
