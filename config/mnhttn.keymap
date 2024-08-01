@@ -80,7 +80,7 @@
             label= "RAISE";
             bindings = <
                 &trans       &trans       &trans       &trans       &trans                             &trans       &trans       &trans       &trans       &trans
-                &kp EXCL     &kp AT       &kp LBRC     &kp RBRC     &kp GRAVE                          &kp SQT      &kp U_UMLAUT &kp CARET    &kp O_UMLAUT &kp STARi
+                &kp EXCL     &kp AT       &kp LBRC     &kp RBRC     &kp GRAVE                          &kp SQT      &trans       &kp CARET    &trans       &kp STAR
                 &kp A_UMLAUT &kp SZ       &kp LPAR     &kp RPAR     &kp PLUS                           &kp DQT      &kp EQUAL    &kp DLLR     &kp POUND    &kp SEMI
                 &kp PIPE     &kp PRCNT    &kp LBKT     &kp RBKT     &kp TILDE                          &kp AMPS     &kp LT       &kp GT       &kp QMARK    &kp UNDER
                                           &trans       &trans       &trans    &trans           &trans  &kp SLASH    &kp RSHFT    &trans
