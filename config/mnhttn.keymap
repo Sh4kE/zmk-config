@@ -10,6 +10,11 @@
 #define RAISE 2
 #define ADJUST  3
 
+&lt {
+    flavor = "tap-preferred";
+    quick-tap-ms = <200>;
+};
+
 / {
     chosen {
       zmk,battery = &vbatt;
@@ -44,14 +49,14 @@
         //     flavor = "balanced";
         //     tapping-term-ms = <170>;
         // };
-        lt: layer_tap {
-            // compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            quick-tap-ms = <100>;
-            // flavor = "balanced";
-            flavor = "tap-preferred";
-            tapping-term-ms = <170>;
-        };
+        // lt: layer_tap {
+        //     // compatible = "zmk,behavior-hold-tap";
+        //     #binding-cells = <2>;
+        //     quick-tap-ms = <100>;
+        //     // flavor = "balanced";
+        //     flavor = "tap-preferred";
+        //     tapping-term-ms = <170>;
+        // };
     };
 
     keymap {
@@ -59,7 +64,7 @@
         base_layer {
             label= "BASE";
             bindings = <
-                &ht ESC N1   &kp N2       &kp N3       &kp N4       &kp N5                             &kp N6       &kp N7       &kp N8       &kp N9       &kp N0
+                &hm ESC N1   &kp N2       &kp N3       &kp N4       &kp N5                             &kp N6       &kp N7       &kp N8       &kp N9       &kp N0
                 &kp Q        &kp W        &kp E        &kp R        &kp T                              &kp Z        &kp U        &kp I        &kp O        &kp P
                 &hm LCTRL A  &hm LALT S   &hm LGUI D   &hm LSHFT F  &kp G                              &kp H        &hm RSHFT J  &hm RGUI K   &hm RALT L   &hm RCTRL COLON
                 &kp Y        &kp X        &kp C        &kp V        &kp B                              &kp N        &kp M        &kp COMMA    &kp DOT      &kp MINUS
