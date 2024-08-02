@@ -28,28 +28,29 @@
     };
 
     behaviors {
-        ht: hold_tap {
+        hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS"
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            flavor = "balanced";
+            tapping-term-ms = <170>;
             quick-tap-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
-        mt: mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            quick-tap-ms = <100>;
-            flavor = "balanced";
-            tapping-term-ms = <170>;
-        };
-        lt: layer_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            quick-tap-ms = <100>;
-            flavor = "balanced";
-            tapping-term-ms = <170>;
-        };
+        // mt: mod_tap {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     #binding-cells = <2>;
+        //     quick-tap-ms = <100>;
+        //     flavor = "balanced";
+        //     tapping-term-ms = <170>;
+        // };
+        // lt: layer_tap {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     #binding-cells = <2>;
+        //     quick-tap-ms = <100>;
+        //     flavor = "balanced";
+        //     tapping-term-ms = <170>;
+        // };
     };
 
     keymap {
@@ -59,9 +60,9 @@
             bindings = <
                 &ht ESC N1   &kp N2       &kp N3       &kp N4       &kp N5                             &kp N6       &kp N7       &kp N8       &kp N9       &kp N0
                 &kp Q        &kp W        &kp E        &kp R        &kp T                              &kp Z        &kp U        &kp I        &kp O        &kp P
-                &lt LALT A   &mt LCTRL S  &mt LGUI D   &mt LSHFT F  &kp G                              &kp H        &mt RSHFT J  &mt RGUI K   &mt RCTRL L  &mt RALT COLON
+                &hm LCTRL A  &hm LALT S   &hm LGUI D   &hm LSHFT F  &kp G                              &kp H        &hm RSHFT J  &hm RGUI K   &hm RALT L   &hm RCTRL COLON
                 &kp Y        &kp X        &kp C        &kp V        &kp B                              &kp N        &kp M        &kp COMMA    &kp DOT      &kp MINUS
-                                          &kp LGUI     &lt LOWER TAB &kp SPACE &bt BT_PRV   &bt BT_NXT &kp RET      &mt RSHFT BSPC &kp RALT
+                                          &kp LGUI     &lt LOWER TAB &kp SPACE &bt BT_PRV   &bt BT_NXT &kp RET      &lt RAISE BSPC &lt RSHFT DEL
             >;
         };
 
@@ -69,10 +70,10 @@
             label= "LOWER";
             bindings = <
                 &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                             &kp N6       &kp N7       &kp N8       &kp N9       &kp N0
-                &ht ESC Q    &kp D        &kp R        &kp W        &kp B                              &kp J        &kp F        &kp U        &kp P        &kp COLON
-                &mt LALT A   &mt LCTRL S  &mt LGUI H   &mt LSHFT T  &kp G                              &kp Y        &mt RSHFT N  &mt RGUI E   &mt RCTRL O  &mt RALT I
+                &hm ESC Q    &kp D        &kp R        &kp W        &kp B                              &kp J        &kp F        &kp U        &kp P        &kp COLON
+                &hm LALT A   &hm LCTRL S  &hm LGUI H   &hm LSHFT T  &kp G                              &kp Y        &hm RSHFT N  &hm RGUI E   &hm RCTRL O  &hm RALT I
                 &kp Z        &kp X        &kp M        &kp C        &kp V                              &kp K        &kp L        &kp COMMA    &kp DOT      &kp MINUS
-                                          &trans       &kp SPACE    &kp BSPC  &trans           &trans  &kp TAB      &mt LSHFT RET &trans
+                                          &trans       &trans       &trans  &trans             &trans  &trans       &trans       &trans
             >;
         };
 
@@ -83,7 +84,7 @@
                 &kp EXCL     &kp AT       &kp LBRC     &kp RBRC     &kp GRAVE                          &kp SQT      &trans       &kp CARET    &trans       &kp STAR
                 &trans       &trans       &kp LPAR     &kp RPAR     &kp PLUS                           &kp DQT      &kp EQUAL    &kp DLLR     &kp POUND    &kp SEMI
                 &kp PIPE     &kp PRCNT    &kp LBKT     &kp RBKT     &kp TILDE                          &kp AMPS     &kp LT       &kp GT       &kp QMARK    &kp UNDER
-                                          &trans       &trans       &trans    &trans           &trans  &kp SLASH    &kp RSHFT    &trans
+                                          &trans       &trans       &trans  &trans             &trans  &trans       &trans       &trans
             >;
         };
 
