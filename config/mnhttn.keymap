@@ -89,7 +89,7 @@
                 &trans       &trans       &trans       &trans       &trans                             &trans       &trans       &trans       &trans       &trans
                 &kp EXCL     &kp AT       &kp LBRC     &kp RBRC     &kp GRAVE                          &kp SQT      &trans       &kp CARET    &trans       &kp STAR
                 &trans       &trans       &kp LPAR     &kp RPAR     &kp PLUS                           &kp DQT      &kp EQUAL    &kp DLLR     &kp POUND    &kp SEMI
-                &kp PIPE     &kp PRCNT    &kp LBKT     &kp RBKT     &kp TILDE                          &kp AMPS     &kp LT       &kp GT       &kp QMARK    &kp UNDER
+                &kp PIPE     &kp PRCNT    &kp LBKT     &kp RBKT     &kp TILDE                          &kp AMPS     &kp LT       &kp GT       &kp BSLH    &kp UNDER
                                           &trans       &trans       &trans  &trans             &trans  &trans       &trans       &trans
             >;
         };
