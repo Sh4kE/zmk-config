@@ -77,9 +77,9 @@
             label= "LOWER";
             bindings = <
                 &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                             &kp N6       &kp N7       &kp N8       &kp N9       &kp N0
-                &hm ESC Q    &kp D        &kp R        &kp W        &kp B                              &kp J        &kp F        &kp U        &kp P        &kp COLON
-                &hm LALT A   &hm LCTRL S  &hm LGUI H   &hm LSHFT T  &kp G                              &kp Y        &hm RSHFT N  &hm RGUI E   &hm RCTRL O  &hm RALT I
-                &kp Z        &kp X        &kp M        &kp C        &kp V                              &kp K        &kp L        &kp COMMA    &kp SLASH    &kp MINUS
+                &kp Q        &kp D        &kp R        &kp W        &kp B                              &kp J        &kp F        &kp U        &kp P        &kp BSLH
+                &hm LALT A   &kp AT       &hm LGUI H   &hm LSHFT T  &kp G                              &kp Y        &hm RSHFT N  &hm RGUI E   &hm RCTRL O  &hm RALT I
+                &kp SIGN     &kp MINUS    &kp PLUS     &kp LBRC     &kp RBRC                           &kp K        &kp L        &kp COMMA    &kp SLASH    &kp MINUS
                                           &trans       &trans       &trans  &trans             &trans  &trans       &trans       &trans
             >;
         };
@@ -87,7 +87,7 @@
         raise_layer {
             label= "RAISE";
             bindings = <
-                &trans       &trans       &trans       &trans       &trans                             &trans       &trans       &trans       &trans       &trans
+                &kp ESC      &trans       &trans       &trans       &trans                             &trans       &trans       &trans       &trans       &trans
                 &kp EXCL     &kp AT       &kp LBRC     &kp RBRC     &kp GRAVE                          &kp SQT      &trans       &kp CARET    &trans       &kp STAR
                 &trans       &trans       &kp LPAR     &kp RPAR     &kp PLUS                           &kp DQT      &kp EQUAL    &kp DLLR     &kp POUND    &kp SEMI
                 &kp PIPE     &kp PRCNT    &kp LBKT     &kp RBKT     &kp TILDE                          &kp AMPS     &kp LT       &kp GT       &kp BSLH    &kp UNDER
