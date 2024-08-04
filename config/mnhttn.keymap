@@ -94,7 +94,7 @@
                                           &trans       &trans       &trans  &trans             &trans  &trans       &trans       &trans
             >;
         };
-;
+
         adjust_layer {
             label= "ADJUST";
 	    bindings = <
