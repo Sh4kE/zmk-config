@@ -67,9 +67,9 @@
             bindings = <
                 &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                             &kp N6       &kp N7       &kp N8       &kp N9       &kp N0
                 &kp Q        &kp W        &kp E        &kp R        &kp T                              &kp Y        &kp U        &kp I        &kp O        &kp P
-                &hm LSHFT A  &hm LALT S   &kp D        &kp F        &kp G                              &kp H        &kp J        &kp K        &hm RALT L   &hm RSHFT SEMI
+                &hm LSHFT A  &hm LALT S   &kp D        &kp F        &kp G                              &kp H        &kp J        &kp K        &hm RALT L   &hm LSHFT SEMI
                 &hm LCTRL Z  &kp X        &kp C        &kp V        &kp B                              &kp N        &kp M        &kp COMMA    &kp DOT      &kp RCTRL
-                                          &kp LGUI     &lt LOWER TAB &kp SPACE &bt BT_PRV   &bt BT_NXT &kp RET      &lt RAISE DEL &lt LSHFT BSPC
+                                          &kp LGUI     &lt LOWER TAB &kp SPACE &bt BT_PRV   &bt BT_NXT &kp RET      &lt RAISE DEL &lt RSHFT BSPC
             >;
         };
 
@@ -88,9 +88,9 @@
             label= "RAISE";
             bindings = <
                 &kp ESC      &trans       &trans       &trans       &trans                             &trans       &trans       &trans       &trans       &trans
-                &kp EXCL     &kp AT       &kp LBRC     &kp RBRC     &kp GRAVE                          &kp SQT      &trans       &kp CARET    &trans       &kp STAR
-                &trans       &trans       &kp LPAR     &kp RPAR     &kp PLUS                           &kp DQT      &kp EQUAL    &kp DLLR     &kp POUND    &kp SEMI
-                &kp PIPE     &kp PRCNT    &kp LBKT     &kp RBKT     &kp TILDE                          &kp AMPS     &kp LT       &kp GT       &kp BSLH     &kp UNDER
+                &kp EXCL     &kp AT       &kp LBRC     &kp RBRC     &kp GRAVE                          &kp SQT      &trans       &kp UP       &kp HOME     &kp STAR
+                &trans       &trans       &kp LPAR     &kp RPAR     &kp PLUS                           &kp DQT      &kp LEFT     &kp DOWN     &kp RIGHT    &kp trans
+                &kp PIPE     &kp PRCNT    &kp LBKT     &kp RBKT     &kp TILDE                          &kp AMPS     &kp LT       &kp GT       &kp END      &kp UNDER
                                           &trans       &trans       &trans  &trans             &trans  &trans       &trans       &trans
             >;
         };
