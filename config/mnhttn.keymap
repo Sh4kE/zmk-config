@@ -78,7 +78,7 @@
             bindings = <
                 &kp ESC      &trans       &trans       &trans       &trans                             &trans       &trans       &trans       &trans       &trans
                 &kp TAB      &trans       &trans       &trans       &trans                             &trans       &trans       &trans       &trans       &kp BSLH
-                &trans       &trans       &trans       &trans       &trans                             &trans       &trans       &trans       &trans       &kp PIPE
+                &trans       &kp AT       &kp HASH     &kp DLLR     &kp PRCNT                          &kp CARET    &kp AMPS     &kp STAR     &trans       &kp PIPE
                 &kp EQUAL    &kp MINUS    &kp PLUS     &kp LBRC     &kp RBRC                           &kp LBKT     &kp RBKT     &trans       &kp SLASH    &trans
                                           &trans       &trans       &trans  &trans             &trans  &trans       &trans       &trans
             >;
@@ -89,7 +89,7 @@
             bindings = <
                 &kp ESC      &trans       &trans       &trans       &trans                             &trans       &trans       &trans       &trans       &trans
                 &kp EXCL     &kp AT       &kp LBRC     &kp RBRC     &kp GRAVE                          &kp SQT      &trans       &kp UP       &kp HOME     &kp STAR
-                &trans       &trans       &kp LPAR     &kp RPAR     &kp PLUS                           &kp DQT      &kp LEFT     &kp DOWN     &kp RIGHT    &kp trans
+                &trans       &trans       &kp LPAR     &kp RPAR     &kp PLUS                           &kp DQT      &kp LEFT     &kp DOWN     &kp RIGHT    &trans
                 &kp PIPE     &kp PRCNT    &kp LBKT     &kp RBKT     &kp TILDE                          &kp AMPS     &kp LT       &kp GT       &kp END      &kp UNDER
                                           &trans       &trans       &trans  &trans             &trans  &trans       &trans       &trans
             >;
